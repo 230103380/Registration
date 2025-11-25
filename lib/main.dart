@@ -29,7 +29,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    // через 3 сек. переход на HomeScreen
+  
     Future.delayed(const Duration(seconds: 3), () {
       Navigator.pushReplacement(
         context,
@@ -46,7 +46,7 @@ class _SplashScreenState extends State<SplashScreen> {
         child: Stack(
           alignment: Alignment.center,
           children: [
-            // Большой круг с картинкой
+            
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [Image(image: AssetImage('assets/images/back.png'))],
@@ -60,7 +60,6 @@ class _SplashScreenState extends State<SplashScreen> {
               ),
             ),
 
-            // Маленький круг поверх
             Positioned(
               bottom: 340,
               child: Text(
