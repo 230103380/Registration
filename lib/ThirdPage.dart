@@ -50,7 +50,7 @@ class ThirdPage extends StatelessWidget {
             CustomStackTextField(
               hintText: 'New Password',
               iconPath: 'assets/images/lock.png',
-              suffixIconPath: 'assets/images/hide.png', // глаз справа
+              suffixIconPath: 'assets/images/hide.png',
               obscureText: true,
             ),
             SizedBox(height: 10),
