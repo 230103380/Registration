@@ -11,8 +11,8 @@ class CustomButton extends StatelessWidget {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
         fixedSize: const Size(330, 50),
-        backgroundColor: const Color(0xffF2C94C), // жёлтая кнопка
-        foregroundColor: Colors.black, // текст чёрный
+        backgroundColor: const Color(0xffF2C94C), 
+        foregroundColor: Colors.black,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
       ),
       onPressed: onPressed,
