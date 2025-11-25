@@ -1,8 +1,7 @@
 import 'package:assignment/ThirdPage.dart';
 import 'package:assignment/custom_button.dart';
 import 'package:flutter/material.dart';
-import 'package:assignment/SecondScreen.dart'; // твой второй экран
-
+import 'package:assignment/SecondScreen.dart'; 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
@@ -20,7 +19,7 @@ class HomeScreen extends StatelessWidget {
           Container(
             height: 300,
             width: double.infinity,
-            padding: const EdgeInsets.all(20), // делаем внутренние отступы
+            padding: const EdgeInsets.all(20), 
             decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(25),
@@ -67,7 +66,6 @@ class HomeScreen extends StatelessWidget {
                 ),
                 SizedBox(height: 10),
 
-                // InkWell (контейнер-кнопка) → переход на ThirdPage
                 InkWell(
                   onTap: () {
                     Navigator.push(
