@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 class CustomStackTextField extends StatefulWidget {
   final String hintText;
-  final String iconPath; // иконка слева
-  final String? suffixIconPath; // иконка справа (необязательно)
+  final String iconPath; 
+  final String? suffixIconPath; 
   final bool obscureText;
   final Color defaultBorderColor;
   final Color focusBorderColor;
@@ -29,7 +29,7 @@ class CustomStackTextField extends StatefulWidget {
 class _CustomStackTextFieldState extends State<CustomStackTextField> {
   late FocusNode _focusNode;
   bool _isFocused = false;
-  bool _isPasswordVisible = false; // для скрытия/отображения пароля
+  bool _isPasswordVisible = false; 
 
   @override
   void initState() {
@@ -57,12 +57,12 @@ class _CustomStackTextFieldState extends State<CustomStackTextField> {
           focusNode: _focusNode,
           obscureText: widget.obscureText && !_isPasswordVisible,
           style: const TextStyle(
-            fontFamily: "Poppins", // 👈 вводимый текст шрифтом Poppins
+            fontFamily: "Poppins",
           ),
           decoration: InputDecoration(
             hintText: widget.hintText,
             hintStyle: const TextStyle(
-              fontWeight: FontWeight.w300, // 👈 hint остаётся тонким
+              fontWeight: FontWeight.w300, 
             ),
             border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
             enabledBorder: OutlineInputBorder(
@@ -81,11 +81,10 @@ class _CustomStackTextFieldState extends State<CustomStackTextField> {
             contentPadding: const EdgeInsets.only(
               left: 48,
               right: 48,
-            ), // место для иконок
+            ), 
           ),
         ),
 
-        // Левая иконка
         Positioned(
           left: 12,
           child: Image.asset(
@@ -96,7 +95,6 @@ class _CustomStackTextFieldState extends State<CustomStackTextField> {
           ),
         ),
 
-        // Правая иконка (например, показать/скрыть пароль)
         if (widget.suffixIconPath != null)
           Positioned(
             right: 12,
